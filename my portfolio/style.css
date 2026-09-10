@@ -1,0 +1,422 @@
+```css
+/* ==============================
+   BASIC PAGE
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #fdf2f8);
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   HEADER
+============================== */
+
+header {
+    background: linear-gradient(135deg, #4f46e5, #9333ea, #ec4899);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* ==============================
+   NAVIGATION
+============================== */
+
+nav {
+    background-color: #111827;
+    text-align: center;
+    padding: 18px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 12px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f472b6;
+}
+
+
+/* ==============================
+   HORIZONTAL LINE
+============================== */
+
+hr {
+    display: none;
+}
+
+
+/* ==============================
+   SECTIONS
+============================== */
+
+section {
+    width: 85%;
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 40px;
+
+    background-color: white;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(79, 70, 229, 0.12);
+
+    border: 1px solid #e5e7eb;
+}
+
+section h2 {
+    color: #4f46e5;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+
+/* ==============================
+   HOME
+============================== */
+
+#home {
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #eef2ff
+    );
+}
+
+#home h2 {
+    color: #7c3aed;
+    font-size: 32px;
+}
+
+#home p {
+    font-size: 18px;
+    color: #555;
+}
+
+
+/* ==============================
+   ABOUT
+============================== */
+
+#about {
+    border-left: 6px solid #8b5cf6;
+}
+
+#about p {
+    font-size: 17px;
+    margin: 15px 0;
+    color: #555;
+}
+
+
+/* ==============================
+   PERSONAL DETAILS TABLE
+============================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background: linear-gradient(
+        135deg,
+        #4f46e5,
+        #7c3aed
+    );
+
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+td {
+    padding: 15px;
+    background-color: #f8fafc;
+}
+
+tr:hover td {
+    background-color: #eef2ff;
+}
+
+
+/* ==============================
+   SKILLS
+============================== */
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+
+    list-style: none;
+}
+
+#skills li {
+    background: linear-gradient(
+        135deg,
+        #dbeafe,
+        #ede9fe
+    );
+
+    color: #4338ca;
+
+    padding: 12px 22px;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    border: 1px solid #c7d2fe;
+
+    transition: 0.3s;
+}
+
+#skills li:hover {
+    background: linear-gradient(
+        135deg,
+        #4f46e5,
+        #9333ea
+    );
+
+    color: white;
+
+    transform: translateY(-5px);
+}
+
+
+/* ==============================
+   EDUCATION
+============================== */
+
+#education {
+    border-left: 6px solid #06b6d4;
+}
+
+#education h3 {
+    color: #0891b2;
+    font-size: 22px;
+    margin: 15px 0 8px;
+}
+
+#education p {
+    color: #555;
+}
+
+#education ol {
+    padding-left: 30px;
+}
+
+#education li {
+    padding: 5px;
+}
+
+
+/* ==============================
+   PROJECTS
+============================== */
+
+article {
+    background: linear-gradient(
+        135deg,
+        #f8fafc,
+        #eef2ff
+    );
+
+    padding: 25px;
+    margin: 20px 0;
+
+    border-radius: 15px;
+
+    border-left: 5px solid #ec4899;
+
+    transition: 0.3s;
+}
+
+article:hover {
+    transform: translateX(8px);
+    box-shadow: 0 8px 20px rgba(236, 72, 153, 0.15);
+}
+
+article h3 {
+    color: #db2777;
+    margin-bottom: 8px;
+}
+
+article p {
+    color: #555;
+}
+
+
+/* ==============================
+   HOBBIES
+============================== */
+
+section:nth-of-type(6) ul {
+    list-style: none;
+    text-align: center;
+}
+
+section:nth-of-type(6) li {
+    display: inline-block;
+
+    background-color: #fce7f3;
+
+    color: #be185d;
+
+    padding: 10px 18px;
+
+    margin: 8px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+}
+
+
+/* ==============================
+   CAREER GOAL
+============================== */
+
+section:nth-of-type(7) {
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #ede9fe,
+        #fce7f3
+    );
+}
+
+section:nth-of-type(7) p {
+    font-size: 18px;
+    color: #4c1d95;
+}
+
+
+/* ==============================
+   CONTACT
+============================== */
+
+#contact {
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #312e81,
+        #7e22ce
+    );
+
+    color: white;
+}
+
+#contact h2 {
+    color: white;
+}
+
+#contact p {
+    margin: 10px;
+    font-size: 17px;
+}
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+    background-color: #111827;
+
+    color: #cbd5e1;
+
+    text-align: center;
+
+    padding: 30px;
+
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* ==============================
+   MOBILE DESIGN
+============================== */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header h2 {
+        font-size: 22px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+        font-size: 14px;
+    }
+
+    section {
+        width: 92%;
+        padding: 25px;
+    }
+
+    section h2 {
+        font-size: 25px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+
+}
+```
