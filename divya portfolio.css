@@ -1,0 +1,283 @@
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #fcf8ff;
+    color: #30213d;
+    line-height: 1.7;
+}
+
+/* Navigation */
+header {
+    background: #ffffff;
+    padding: 18px 8%;
+    box-shadow: 0 2px 15px rgba(80, 30, 100, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #7839b8;
+    font-size: 28px;
+}
+
+.logo span,
+.heading span,
+.home h1 span {
+    color: #b46be8;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #493657;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #a855d8;
+}
+
+/* Home Section */
+.home {
+    min-height: 85vh;
+    padding: 70px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+    flex-wrap: wrap;
+    background: linear-gradient(135deg, #f4e8ff, #fff5fa);
+}
+
+.home-content {
+    flex: 1 1 350px;
+    max-width: 650px;
+}
+
+.welcome {
+    color: #8b42c5;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.home h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.home h3 {
+    color: #7c3aed;
+    margin-bottom: 18px;
+    font-size: 20px;
+}
+
+.home-content > p:not(.welcome) {
+    margin-bottom: 25px;
+    color: #665570;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #8b42c5;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #64259a;
+    transform: translateY(-3px);
+}
+
+/* Profile Circle */
+.profile {
+    flex: 0 1 300px;
+    text-align: center;
+    margin: auto;
+}
+
+.circle {
+    width: 230px;
+    height: 230px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #c084fc, #ec9acb);
+    border: 8px solid white;
+    box-shadow: 0 10px 35px #d9b8ed;
+}
+
+.profile h2 {
+    color: #7839b8;
+    font-size: 21px;
+}
+
+.profile p {
+    color: #806c8b;
+}
+
+/* Common Sections */
+.section {
+    padding: 75px 8%;
+    text-align: center;
+}
+
+.heading {
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: #493057;
+}
+
+.section > p {
+    max-width: 800px;
+    margin: 12px auto;
+    color: #665570;
+}
+
+/* Skills */
+.skills-section {
+    background: #f5ebff;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.skill-card {
+    background: white;
+    padding: 28px 20px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(100, 40, 130, 0.08);
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(100, 40, 130, 0.15);
+}
+
+.skill-card h3 {
+    color: #8b42c5;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: #766780;
+}
+
+/* Education */
+.education-card {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    border-left: 5px solid #b46be8;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(100, 40, 130, 0.08);
+    text-align: left;
+}
+
+.education-card h3 {
+    color: #7839b8;
+    margin-bottom: 10px;
+}
+
+/* Contact */
+.contact-section {
+    background: linear-gradient(135deg, #f4e8ff, #fff5fa);
+}
+
+.contact-section .btn {
+    margin-top: 25px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 22px;
+    background: #382347;
+    color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    header {
+        padding: 15px 5%;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 12px;
+        font-size: 14px;
+    }
+
+    .home {
+        padding: 55px 6%;
+        text-align: center;
+    }
+
+    .profile {
+        flex-basis: 100%;
+    }
+
+    .circle {
+        width: 180px;
+        height: 180px;
+        font-size: 50px;
+    }
+
+    .section {
+        padding: 55px 6%;
+    }
+
+    .heading {
+        font-size: 29px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+}
